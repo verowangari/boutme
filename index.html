@@ -168,20 +168,39 @@
                     </a>
                 </div>
             </section>
+<!-- sample gpt contact form -->
 
+
+<section class="contact section" id="contact">
+    <h2 class="section-title">Contact</h2>
+
+    <div class="contact__container bd-grid">
+        <form action="" class="contact__form" id="contactForm">
+            <input type="text" placeholder="Name" class="contact__input" name="name" required>
+            <input type="email" placeholder="Email" class="contact__input" name="email" required>
+            <textarea name="message" placeholder="Message" cols="0" rows="10" class="contact__input" required></textarea>
+            <input type="submit" value="Send" class="contact__button button">
+        </form>
+        <div class="contact__message" id="contactMessage"></div>
+    </div>
+</section>
+
+<!-- end of sample gpt form -->
             <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
+            <!-- <section class="contact section" id="contact">
                 <h2 class="section-title">Contact</h2>
 
                 <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
+                    <form action="" id="contactForm" class="contact__form">
+                    
                         <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
+                        <input type="email" placeholder="Email" class="contact__input">
                         <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        
                         <input type="button" value="Send" class="contact__button button">
                     </form>
                 </div>
-            </section>
+            </section> -->
         </main>
 
         <!--===== FOOTER =====-->
@@ -195,11 +214,61 @@
             <p class="footer__copy">&#169; Veronicamuriithi. All rights reserved</p>
         </footer>
 
-
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const form = document.getElementById('contactForm');
+                const messageContainer = document.getElementById('contactMessage');
+        
+                form.addEventListener('submit', function (event) {
+                    event.preventDefault(); // Prevent the default form submission behavior
+        
+                    // Get form data
+                    const formData = new FormData(form);
+                    const name = formData.get('name');
+                    const email = formData.get('email');
+                    const message = formData.get('message');
+        
+                    // You can add additional validation here if needed
+        
+                    // For simplicity, let's assume the form is always valid
+                    // Here, you can use an AJAX request to send the form data to your server
+                    // For now, we'll log the form data and display a success message
+                    console.log('Form data:', { name, email, message });
+        
+                    // Clear the form fields
+                    form.reset();
+        
+                    // Display a success message on top of the page
+                    showMessage('Thank you for contacting Veronica!', 'success');
+                });
+        
+                function showMessage(message, type) {
+                    messageContainer.textContent = message;
+                    messageContainer.classList.add(type);
+                    
+                    // Add styles to position the message on top
+                    messageContainer.style.position = 'fixed';
+                    messageContainer.style.top = '0';
+                    messageContainer.style.left = '50%';
+                    messageContainer.style.transform = 'translateX(-50%)';
+                    messageContainer.style.zIndex = '1000';
+                    messageContainer.style.backgroundColor='blue'
+                    messageContainer.style.color='white'
+        
+                    // Remove the message after a few seconds
+                    setTimeout(() => {
+                        messageContainer.textContent = '';
+                        messageContainer.classList.remove(type);
+                    }, 3000);
+                }
+            });
+        </script>
+        
         <!--===== SCROLL REVEAL =====-->
         <script src="https://unpkg.com/scrollreveal"></script>
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
+        
     </body>
 </html>
