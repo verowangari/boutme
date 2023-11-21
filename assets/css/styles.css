@@ -26,6 +26,27 @@
   --z-fixed: 100;
 }
 
+/* nav image  */
+/* Add this to your CSS file or in the <style> tag in your HTML */
+/* Add this to your CSS file or in the <style> tag in your HTML */
+.nav__logo {
+  display: flex; /* Use flexbox for positioning */
+  align-items: center; /* Align items vertically in the center */
+}
+
+.nav__logo img {
+  width: 40px; /* Adjust the width as needed */
+  height: 40px; /* Adjust the height as needed */
+  margin-right: 10px; /* Add margin to separate the image from the text */
+}
+
+.nav__logo-text {
+  text-decoration: none; /* Remove underline from the text */
+  color: #333; /* Set the text color */
+}
+
+
+/* nav image */
 @media screen and (min-width: 968px) {
   :root {
     --big-font-size: 3.5rem;
@@ -189,7 +210,7 @@ img {
 
 /*===== HOME =====*/
 .home {
-  position: relative;
+  /* position: relative; */
   row-gap: 5rem;
   padding: 4rem 0 5rem;
 }
