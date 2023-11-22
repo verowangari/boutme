@@ -9,7 +9,7 @@ Veronica Wangari
 ## Description
 This a page that shows my education background, skills and my hobbies.<br> 
 ## Link to Github Pages
-https://github.com/verowangari/boutme
+https://verowangari.github.io/boutme/
 
 ## Setup/Installation Requirement
 1) Install Visual Studio <br> 2) Create a github account. <br> 3) Install git <br> 4) Create a repository <br> 5) Code <br> 6) Push to github <br>7) Put the site into use
