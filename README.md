@@ -1,6 +1,8 @@
 
 
-![preview img](/index.html)
+![preview img]()
+![Preview Image](assets/img/Screenshot (29) - Copy.png)
+
 ### My PortFolio
 #### Brief description of application
 A page that shows information about me
