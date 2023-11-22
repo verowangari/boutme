@@ -2,6 +2,7 @@
 
 
 ![Preview](/assets/img/Screenshot%20(29)%20-%20Copy.png)
+![ProjectsPreview](/assets/img/Screenshot%20(30).png)
 
 
 ### My PortFolio
