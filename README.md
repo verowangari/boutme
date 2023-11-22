@@ -1,7 +1,7 @@
 
 
 
-![GitHub Logo](https://example.com/images/logo.png)
+![Preview](/assets/img/Screenshot%20(29)%20-%20Copy.png)
 
 
 ### My PortFolio
