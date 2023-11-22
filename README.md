@@ -1,7 +1,9 @@
 
 
 ![preview img]()
-![Preview Image](assets/img/Screenshot (29) - Copy.png)
+![Alt Text](url)
+![GitHub Logo](![GitHub Logo](https://example.com/images/logo.png)
+)
 
 ### My PortFolio
 #### Brief description of application
